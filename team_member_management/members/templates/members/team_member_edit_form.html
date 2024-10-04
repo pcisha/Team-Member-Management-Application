@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Team Member</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+<div class="container">
+    <header>
+        <h1>Edit team member</h1>
+        <p>Edit contact info, location, and role.</p>
+    </header>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="btn">Save</button>
+        <a href="{% url 'team_member_delete' pk=object.pk %}" class="btn btn-danger">Delete</a>
+    </form>
+</div>
+</body>
+</html>

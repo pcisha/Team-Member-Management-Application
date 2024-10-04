@@ -1,0 +1,168 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    position: relative; /* Add relative positioning to header */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+header p {
+    color: #666;
+    margin: 0;
+}
+
+.add-button {
+    position: absolute; /* Position absolutely within the header */
+    top: 10px;
+    right: 10px;
+    display: block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: #007bff;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.add-button:hover {
+    background: #0056b3;
+}
+
+.member-list {
+    margin-bottom: 20px;
+}
+
+.member-item-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.member-item {
+    display: flex; /* Use flexbox for layout */
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    transition: background-color 0.3s;
+}
+
+.member-item:hover {
+    background-color: #f1f1f1;
+}
+
+.thumbnail {
+    width: 30px; /* Adjust width */
+    height: 30px; /* Adjust height */
+    border-radius: 50%; /* Make it round */
+    margin-right: 20px; /* Space between image and member info */
+    object-fit: cover; /* Ensure image covers the container */
+}
+
+.member-info {
+    flex: 1;
+}
+
+.member-info h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.member-info p {
+    margin: 5px 0;
+    color: #666;
+}
+
+.member-actions {
+    display: flex;
+    flex-direction: column;
+}
+
+.member-actions .btn {
+    margin: 5px 0;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.member-actions .btn-edit {
+    background-color: #28a745;
+}
+
+.member-actions .btn-delete {
+    background-color: #dc3545;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form p {
+    margin: 0;
+    padding: 10px 0;
+}
+
+form label {
+    margin-bottom: 5px;
+    color: #333;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form select {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+form .btn {
+    padding: 10px 15px;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    text-align: center;
+    text-decoration: none;
+}
+
+form .btn-danger {
+    background: #dc3545;
+    margin-top: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+form .btn:hover,
+form .btn-danger:hover {
+    opacity: 0.9;
+}

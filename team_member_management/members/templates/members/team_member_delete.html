@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete a Team Member</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+<div class="container">
+    <header>
+        <h1>Delete Team Member</h1>
+        <p>Are you sure you want to delete {{ object.first_name }} {{ object.last_name }}?</p>
+    </header>
+    <form method="post">
+        {% csrf_token %}
+        <button type="submit" class="btn btn-danger">Delete</button>
+        <a href="{% url 'team_member_list' %}" class="btn">Cancel</a>
+    </form>
+</div>
+</body>
+</html>
