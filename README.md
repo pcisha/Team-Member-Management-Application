@@ -139,5 +139,7 @@ time and space complexity analysis, and instructions on how to run the code.
 This should provide a comprehensive overview for anyone reviewing the repository.
 
 Author: Prachi Shah
-
 Date: August 7, 2024.
+
+P.S. The default copyright laws apply.
+
