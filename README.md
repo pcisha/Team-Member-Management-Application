@@ -140,6 +140,6 @@ This should provide a comprehensive overview for anyone reviewing the repository
 
 Date: August 7, 2024.
 
-Author: Prachi Shah @ https://pcisha.my.canva.site/
+Author: Prachi Shah @ https://www.linkedin.com/in/prachisms/
 
 P.S. The default copyright laws apply.
