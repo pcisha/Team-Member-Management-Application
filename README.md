@@ -57,7 +57,7 @@
     db.sqlite3 file. Using the command `$python manage.py migrate`
 12. `requirements-dev.txt` file is used for dependency management. Currently, Django version number is added as the only
     dependency.
-13. Superuser `pcisha`'` without a password is created for the app.
+13. Superuser `abc` without a password is created for the app.
 
 #### URL Endpoints for CRUD Operations
 
